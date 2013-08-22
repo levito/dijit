@@ -25,7 +25,7 @@
   border-radius: 0;
 }
 .claro .dijitTimePicker {
-  border: 1px #b5bcc7 solid;
+  border: 1px #d8d8d8 solid;
   border-top: none;
   border-bottom: none;
   background-color: #fff;
@@ -35,28 +35,22 @@
 .claro .dijitTimePickerItem {
   /* dijitTimePickerItem refers to both Tick's (minor values like 2:15, 2:30, 2:45) and Marker's (major values like 2PM, 3PM) */
 
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
-  border-top: solid 1px #b5bcc7;
-  border-bottom: solid 1px #b5bcc7;
+  background-image: none;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
   margin-top: -1px;
 }
 .claro .dijitTimePickerTick {
   /* minor value */
 
-  color: #818181;
-  background-color: #efefef;
+  color: #808080;
+  background-color: #eeeeee;
   font-size: 0.818em;
 }
 .claro .dijitTimePickerMarker {
   /* major value - 1:00, 2:00, times on the hour */
 
-  background-color: #e5f2fe;
+  background-color: #ffffff;
   font-size: 1em;
   white-space: nowrap;
 }
@@ -64,8 +58,8 @@
 .claro .dijitTimePickerMarkerHover,
 .claro .dijitTimePickerMarkerSelected,
 .claro .dijitTimePickerTickSelected {
-  background-color: #7dbdfa;
-  color: #000000;
+  background-color: #dddddd;
+  color: #222222;
 }
 .claro .dijitTimePickerMarkerSelected,
 .claro .dijitTimePickerTickSelected {
@@ -78,15 +72,9 @@
 .claro .dijitTimePicker .dijitButtonNode {
   border-left: none;
   border-right: none;
-  border-color: #b5bcc7;
-  background-color: #efefef;
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  border-color: #d8d8d8;
+  background-color: #eeeeee;
+  background-image: none;
 }
 .claro .dijitTimePicker .dijitArrowButtonInner {
   height: 100%;
@@ -102,7 +90,7 @@
 /* hover */
 .claro .dijitTimePicker .dijitUpArrowHover,
 .claro .dijitTimePicker .dijitDownArrowHover {
-  background-color: #abd6ff;
+  background-color: #eeeeee;
 }
 .claro .dijitTimePicker .dijitUpArrowHover .dijitArrowButtonInner {
   background-position: -175px 45%;

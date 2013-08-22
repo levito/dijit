@@ -1,51 +1,51 @@
 // General
 
-@primary-color: #cfe5fa;													// Base color for entire theme
-@secondary-color: #efefef;												// Base color for bar-backgrounds
-@text-color: #000;													// Text color for enabled widgets
-@disabled-color: #d3d3d3;												// Base for disabled backgrounds and borders
-@error-color: #d46464;
+@primary-color: #fff;													// Base color for entire theme
+@secondary-color: #eee;												// Base color for bar-backgrounds
+@text-color: #444;													// Text color for enabled widgets
+@disabled-color: #ddd;												// Base for disabled backgrounds and borders
+@error-color: #c66;
 
-@container-background-color:#fff;										// Backgrounds for various content areas such as TitlePane, ContentPane and Inputs (if changed, adjust selected tab to match)
+@container-background-color: #fff;										// Backgrounds for various content areas such as TitlePane, ContentPane and Inputs (if changed, adjust selected tab to match)
 
-@minor-selected-color: spin(saturate(darken(@primary-color, 6), 19), 0);						// Color for various arrows and buttons
-@base-border-color: spin(desaturate(darken(@primary-color, 29), 44), -1);		// Augmented and used directly by variables to create border colors for various widgets
-@unfocused-clickable-color: spin(saturate(lighten(@primary-color, 5), 10), 0);				// Background color for enabled buttons, text inputs
-@border-color: spin(desaturate(darken(@primary-color, 15), 67), 8);						// Border color for (enabled, unhovered) TextBox, Slider, Accordion, BorderContainer, TabContainer
+@minor-selected-color: #eee; //darken(@primary-color, 7);						// Color for various arrows and buttons
+@base-border-color: #ccc; //darken(@primary-color, 20);		// Augmented and used directly by variables to create border colors for various widgets
+@unfocused-clickable-color: #fff; //lighten(@primary-color, 5);				// Background color for enabled buttons, text inputs
+@border-color: #d8d8d8; //darken(@primary-color, 15);						// Border color for (enabled, unhovered) TextBox, Slider, Accordion, BorderContainer, TabContainer
 @minor-border-color: @disabled-color;									// Color of borders inside widgets: horizontal line in Calendar between weeks, around color swatches in ColorPalette, above Dialog action bar
 @popup-border-color: @base-border-color;								// Border for Dialog, Menu, Tooltip.   Must also update tooltip.png (the arrow image file) to match
 
 
 @disabled-border-color: @disabled-color;								// Border color for disabled/readonly Button, TextBox etc. widgets
 @disabled-background-color: @secondary-color;							// Disabled button, textbox, etc.
-@disabled-text-color: darken(@secondary-color, 43);											// Text color for disabled/readonly widgets
+@disabled-text-color: rgba(red(@text-color), green(@text-color), blue(@text-color), .5); // darken(@secondary-color, 43);											// Text color for disabled/readonly widgets
 
 @unselected-background-color: @secondary-color;							// Background color for unselected/unopened tab button, accordion pane, TitlePane, Menu items
-@unselected-text-color: darken(@secondary-color, 65);										// Text color for unselected/unopened tab button, accordion pane, TitlePane, Menu items
+@unselected-text-color: #666; //darken(@secondary-color, 65);										// Text color for unselected/unopened tab button, accordion pane, TitlePane, Menu items
 
 @hovered-border-color: @base-border-color;								// Hover of textbox, tab label, BorderContainer splitter, Calendar, etc.
-@hovered-background-color: @minor-selected-color;	// Background color for hover of Button, MenuBar, Accordion pane, Calendar... anything that has a (non-white) color to start with and gets darker on hover
-@hovered-text-color: @text-color;										// Used for title of select Accordion pane, label of select tab, hovered Menu item, etc.
+@hovered-background-color: #e5e5e5; //darken(@minor-selected-color, 3); //@minor-selected-color;	// Background color for hover of Button, MenuBar, Accordion pane, Calendar... anything that has a (non-white) color to start with and gets darker on hover
+@hovered-text-color: #222; //@text-color;										// Used for title of select Accordion pane, label of select tab, hovered Menu item, etc.
 
-@pressed-border-color:  @base-border-color;								// During click on Calendar day, Slider up/down buttons, tab button, etc.
-@pressed-background-color: spin(saturate(darken(@primary-color, 16), 12), 0);					// Background color while clicking on Accordion/TitlePane title bar, tab button, Calendar day, Toolbar button, Tree row.
+@pressed-border-color: #bfbfbf; //@base-border-color;								// During click on Calendar day, Slider up/down buttons, tab button, etc.
+@pressed-background-color: #ddd; //darken(@minor-selected-color, 6);					// Background color while clicking on Accordion/TitlePane title bar, tab button, Calendar day, Toolbar button, Tree row.
 
 @selected-border-color: @base-border-color;  							// Selected AccordionPane, tab of nested TabContainer (but plain TabContainer is special)
 @selected-background-color: @primary-color;								// Selected Accordion pane, nested tab label, Tree row
-@selected-text-color: @text-color;										// title of selected Accordion pane, label of selected tab, hovered Menu item, etc.
+@selected-text-color: #222; //@text-color;										// title of selected Accordion pane, label of selected tab, hovered Menu item, etc.
 
-@bar-background-color: @secondary-color;								// MenuBar, Toolbar, action bar at bottom of dialog
+@bar-background-color: @container-background-color; //@secondary-color;								// MenuBar, Toolbar, action bar at bottom of dialog
 @pane-background-color: @container-background-color;					// Background color of Accordion panes, Dialogs, etc.
 @popup-background-color: @container-background-color;					// Background for Dialog.   TODO: currently use for ColorPalette, maybe should change.
 
 
 
 // Buttons
-@button-border-color:  @base-border-color;								// Border for (stand-alone) buttons in normal, hovered, or active state
-@button-background-color: @unfocused-clickable-color;					// Background color for (unhovered) buttons
-@button-hovered-background-color: @minor-selected-color;	// Background color for hovered buttons
-@button-pressed-background-color: @minor-selected-color;				// Background color for active buttons
-@button-border-radius: 4px;												// Rounded corner radius for buttons (except in toolbar)
+@button-border-color: @border-color;								// Border for (stand-alone) buttons in normal, hovered, or active state
+@button-background-color: @unselected-background-color; //@minor-selected-color;					// Background color for (unhovered) buttons
+@button-hovered-background-color: @hovered-background-color; //darken(@minor-selected-color, 3);	// Background color for hovered buttons
+@button-pressed-background-color: @pressed-background-color; //darken(@minor-selected-color, 6);				// Background color for active buttons
+@button-border-radius: 2px;												// Rounded corner radius for buttons (except in toolbar)
 
 // Input widgets
 @focused-border-color: @base-border-color;								// Focused textbox, editor, select, etc.
@@ -56,12 +56,12 @@
 @textbox-hovered-background-color: @unfocused-clickable-color;			// Background color when hovering a unfocused TextBox, Select, Editor, or other input widget
 @textbox-focused-background-color: @textbox-background-color;
 @textbox-error-background-color: @textbox-background-color;
-@textbox-disabled-background-color: @disabled-background-color;
+@textbox-disabled-background-color: @textbox-background-color; //@disabled-background-color;
 
 @textbox-padding: 2px;	// Padding for Textbox, Textarea, etc.
 
 // CheckBox, RadioButton
-@focus-outline-color: darken(@secondary-color, 65);											// Color for artificial focus outline around labels of checkboxes
+@focus-outline-color: @base-border-color; //darken(@secondary-color, 65);											// Color for artificial focus outline around labels of checkboxes
 
 // TabContainer
 @nestedtab-hovered-background-color: @unfocused-clickable-color;
@@ -71,10 +71,10 @@
 @tab-disabled-background-color: @disabled-color;						// For disabled tabs of a TabContainer (not officially supported)
 
 // Arrow buttons (stand alone, or inside ComboBox / ComboButton / Spinner / etc.
-@arrowbutton-background-color: @secondary-color;
-@arrowbutton-hovered-background-color: @minor-selected-color;			// Color of arrow when hovering ComboBox.   But hovering Spinner doesn't change arrow color (TODO)
-@arrowbutton-pressed-background-color: @minor-selected-color;
-@arrowbutton-inner-border-color: @container-background-color;									// Typically the arrows have an inner white border (a.k.a. padding) and then an outer black-ish border
+@arrowbutton-background-color: @button-background-color; //@secondary-color;
+@arrowbutton-hovered-background-color: @button-hovered-background-color; //@minor-selected-color;			// Color of arrow when hovering ComboBox.   But hovering Spinner doesn't change arrow color (TODO)
+@arrowbutton-pressed-background-color: @button-pressed-background-color; //@minor-selected-color;
+@arrowbutton-inner-border-color: transparent; //@container-background-color;									// Typically the arrows have an inner white border (a.k.a. padding) and then an outer black-ish border
 
 // Slider
 // Note: any changes here require corresponding changes in form/images/sliderThumbs.png
@@ -90,8 +90,8 @@
 
 // Select, ComboBox
 @select-dropdownitem-background-color: @container-background-color;			// Background color for items in the drop down list of a ComboBox/Select
-@select-dropdownitem-hovered-background-color: @pressed-background-color;	// Background color for the hovered item in the drop down list of a ComboBox/Select
-@select-matchedtext-background-color: @minor-selected-color;				// Background color of text in ComboBox drop down that matches typed in phrase
+@select-dropdownitem-hovered-background-color: @button-hovered-background-color; //@pressed-background-color;	// Background color for the hovered item in the drop down list of a ComboBox/Select
+@select-matchedtext-background-color: @border-color; //@minor-selected-color;				// Background color of text in ComboBox drop down that matches typed in phrase
 
 // Menus
 @menu-background-color: @popup-background-color;
@@ -132,7 +132,7 @@
 @swatch-selected-border-color: #000;
 
 // Dialog
-@dialog-underlay-color: @container-background-color;			// the thing that grays out the screen when a dialog is shown
+@dialog-underlay-color: rgba(0,0,0,.4); //@container-background-color;			// the thing that grays out the screen when a dialog is shown
 @dialog-titlebar-border-color: @container-background-color;	// Inner border around the title sectionof a Dialog, inside the main border of the Dialog and the border between title and content
 @dialog-titlebar-background-color: @minor-selected-color;
 
@@ -145,7 +145,7 @@
 
 // Toolbar
 @toolbar-button-checked-background-color: @container-background-color;								// a toggled-on button in the toolbar
-@toolbar-combobutton-hovered-unhoveredsection-background-color: spin(saturate(lighten(@primary-color, 8), 19), -29);	// when user hovers a ComboButton in a Toolbar, the other half of the button turns this color
+@toolbar-combobutton-hovered-unhoveredsection-background-color: lighten(@primary-color, 8);	// when user hovers a ComboButton in a Toolbar, the other half of the button turns this color
 @toolbar-button-border-radius: 2px;			// Rounded corner radius for buttons for buttons in toolbar
 
 // DnD
@@ -155,7 +155,7 @@
 @dnd-dropseparator-color: @base-border-color;					// Color of line indicating that user is about to drop between items A & B
 
 // Document level
-@document-text-color: #131313;								// Text color for document itself (text outside of widgets)
+@document-text-color: @text-color;								// Text color for document itself (text outside of widgets)
 @document-shadedsection-background-color: @bar-background-color;// background color used for <pre>, <code>, and table header rows
 @document-border-color: @disabled-color;								// Border for <pre>, <code>, tables, etc.
 
@@ -230,40 +230,46 @@
 .linear-gradient (@value1, @value2) {
 	// summary:
 	//		Expands to browser specific background-image specifications for a linear-gradient (2 stops)
- 	background-image: -moz-linear-gradient(@value1, @value2); // FF3.6 - FF15 (FF16+ supports linear-gradient)
- 	background-image: -webkit-linear-gradient(@value1, @value2); // Chrome10+, Safari5.1+
- 	background-image: -o-linear-gradient(@value1, @value2); // Opera 11.10+
- 	background-image: linear-gradient(@value1, @value2);
+ 	// background-image: -moz-linear-gradient(@value1, @value2); // FF3.6 - FF15 (FF16+ supports linear-gradient)
+ 	// background-image: -webkit-linear-gradient(@value1, @value2); // Chrome10+, Safari5.1+
+ 	// background-image: -o-linear-gradient(@value1, @value2); // Opera 11.10+
+ 	// background-image: linear-gradient(@value1, @value2);
+ 	background-image: none;
 }
 .linear-gradient (@value1, @value2, @value3) {
- 	background-image: -moz-linear-gradient(@value1, @value2, @value3); // FF3.6 - FF15 (FF16+ supports linear-gradient)
- 	background-image: -webkit-linear-gradient(@value1, @value2, @value3); // Chrome10+, Safari5.1+
- 	background-image: -o-linear-gradient(@value1, @value2, @value3); // Opera 11.10+
- 	background-image: linear-gradient(@value1, @value2, @value3);
+ 	// background-image: -moz-linear-gradient(@value1, @value2, @value3); // FF3.6 - FF15 (FF16+ supports linear-gradient)
+ 	// background-image: -webkit-linear-gradient(@value1, @value2, @value3); // Chrome10+, Safari5.1+
+ 	// background-image: -o-linear-gradient(@value1, @value2, @value3); // Opera 11.10+
+ 	// background-image: linear-gradient(@value1, @value2, @value3);
+ 	background-image: none;
 }
 .linear-gradient (@value1, @value2, @value3, @value4) {
- 	background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4); // FF3.6 - FF15 (FF16+ supports linear-gradient)
- 	background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4); // Chrome10+, Safari5.1+
- 	background-image: -o-linear-gradient(@value1, @value2, @value3, @value4); // Opera 11.10+
- 	background-image: linear-gradient(@value1, @value2, @value3, @value4);
+ 	// background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4); // FF3.6 - FF15 (FF16+ supports linear-gradient)
+ 	// background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4); // Chrome10+, Safari5.1+
+ 	// background-image: -o-linear-gradient(@value1, @value2, @value3, @value4); // Opera 11.10+
+ 	// background-image: linear-gradient(@value1, @value2, @value3, @value4);
+ 	background-image: none;
 }
 .linear-gradient (@value1, @value2, @value3, @value4, @value5) {
- 	background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4, @value5); // FF3.6 - FF15 (FF16+ supports linear-gradient)
- 	background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4, @value5); // Chrome10+, Safari5.1+
- 	background-image: -o-linear-gradient(@value1, @value2, @value3, @value4, @value5); // Opera 11.10+
- 	background-image: linear-gradient(@value1, @value2, @value3, @value4, @value5);
+ 	// background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4, @value5); // FF3.6 - FF15 (FF16+ supports linear-gradient)
+ 	// background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4, @value5); // Chrome10+, Safari5.1+
+ 	// background-image: -o-linear-gradient(@value1, @value2, @value3, @value4, @value5); // Opera 11.10+
+ 	// background-image: linear-gradient(@value1, @value2, @value3, @value4, @value5);
+ 	background-image: none;
 }
 .linear-gradient (@value1, @value2, @value3, @value4, @value5, @value6) {
- 	background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6); // FF3.6 - FF15 (FF16+ supports linear-gradient)
- 	background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6); // Chrome10+, Safari5.1+
- 	background-image: -o-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6); // Opera 11.10+
- 	background-image: linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6);
+ 	// background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6); // FF3.6 - FF15 (FF16+ supports linear-gradient)
+ 	// background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6); // Chrome10+, Safari5.1+
+ 	// background-image: -o-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6); // Opera 11.10+
+ 	// background-image: linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6);
+ 	background-image: none;
 }
 .linear-gradient (@value1, @value2, @value3, @value4, @value5, @value6, @value7) {
- 	background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7); // FF3.6 - FF15 (FF16+ supports linear-gradient)
- 	background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7); // Chrome10+, Safari5.1+
- 	background-image: -o-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7); // Opera 11.10+
- 	background-image: linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7);
+ 	// background-image: -moz-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7); // FF3.6 - FF15 (FF16+ supports linear-gradient)
+ 	// background-image: -webkit-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7); // Chrome10+, Safari5.1+
+ 	// background-image: -o-linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7); // Opera 11.10+
+ 	// background-image: linear-gradient(@value1, @value2, @value3, @value4, @value5, @value6, @value7);
+ 	background-image: none;
 }
 
 .alpha-white-gradient (@opacity1, @stop1, @opacity2, @stop2) {
@@ -311,7 +317,7 @@
 	//		The percent to fade at the bottom
 	background-color: @color; // the base color
 	.linear-gradient(fadeout(#fff, 100-@fade1), fadeout(#fff, 100-@fade2));
-	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr="lighten(@color, @fade1)~", endColorstr="lighten(@color, @fade2)~")"; // IE
+	// filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr="lighten(@color, @fade1)~", endColorstr="lighten(@color, @fade2)~")"; // IE
 }
 .horizontal-gradient-and-filter (@color, @fade1, @fade2) {
 	// summary:
@@ -327,7 +333,7 @@
 	//		The percent to fade at the bottom
 	background-color: @color; // the base color
 	.linear-gradient(left, fadeout(#fff, 100-@fade1), fadeout(#fff, 100-@fade2));
-	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr="lighten(@color, @fade1)~", endColorstr="lighten(@color, @fade2)~"gradientType=1)"; // IE
+	// filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr="lighten(@color, @fade1)~", endColorstr="lighten(@color, @fade2)~"gradientType=1)"; // IE
 }
 
 
@@ -349,14 +355,14 @@
 	//			- TitlePane title bar, AccordionContainer title bar, Dialog title bar
 
 	// Fallback for IE
-	background-image: url("@{pathToRoot}images/standardGradient.png");
-	background-repeat: repeat-x;
+	// background-image: url("@{pathToRoot}images/standardGradient.png");
+	// background-repeat: repeat-x;
 
 	// CSS gradient for other browsers
 	.alpha-white-gradient(0.7, 0%, 0, 100%);
 
 	// IE6 can't handle a background-image with transparency and a background-color; the color is blocked out
-	_background-image: none;
+	// _background-image: none;
 }
 .active-gradient (@pathToRoot: "") {
 	// summary:
@@ -368,12 +374,12 @@
 	//			- active TitlePane title bar, AccordionContainer title bar
 
 	// Fallback for IE
-	background-image: url("@{pathToRoot}images/activeGradient.png");
-	background-repeat: repeat-x;
+	// background-image: url("@{pathToRoot}images/activeGradient.png");
+	// background-repeat: repeat-x;
 
 	// CSS gradient for other browsers
 	.linear-gradient(rgba(190,190,190,0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
 
 	// IE6 can't handle a background-image with transparency and a background-color; the color is blocked out
-	_background-image: none;
+	// _background-image: none;
 }

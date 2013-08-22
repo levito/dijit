@@ -1,42 +1,42 @@
-/* Dialog 
- * 
+/* Dialog
+ *
  * Styling Dialog includes two sections: Dialog and Tooltip & TooltipDialog
- * 
+ *
  * Dialog:
- * 1. Dialog (default styling): 
+ * 1. Dialog (default styling):
  * 		.dijitDialog - styles for dialog's bounding box
  *
- * 2. Dialog title 
+ * 2. Dialog title
  * 		.dijitDialogTitleBar - styles for the title container at the top of dialog
  * 		.dijitDialogTitle - the text container in dialog title
- * 
- * 3. Dialog content 
+ *
+ * 3. Dialog content
  * 		.dijitDialogPaneContent - main container for content area and action bar
  * 		.dijitDialogPaneContentArea - styles for content container
- * 
- * 4. Dialog action bar 
+ *
+ * 4. Dialog action bar
  * 		.dijitDialogPaneActionBar - styles for action buttons lie at the bottom of dialog pane content
- * 
- * 5. Dialog underlay 
+ *
+ * 5. Dialog underlay
  * 		.dijitDialogUnderlay - div under the dialog which used for separate dialog and page content
- * 
- * 
+ *
+ *
  * Tooltip & TooltipDialog:
- * 1. tooltip content container: 
+ * 1. tooltip content container:
  * 		.dijitTooltipContainer - tooltip content container
  *
- * 2. tooltip connector: 
+ * 2. tooltip connector:
  * 		.dijitTooltipConnector - tooltip anchor includes 4 direction(up, down, left, right)
  */
 .claro .dijitDialog {
-  border: 1px solid #759dc0;
+  border: 1px solid #cccccc;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 .claro .dijitDialogPaneContent {
   background: #ffffff repeat-x top left;
-  border-top: 1px solid #759dc0;
+  border-top: 1px solid #dddddd;
   padding: 10px 8px;
   position: relative;
 }
@@ -44,16 +44,17 @@
   /* trick to get action bar (gray bar at bottom with OK/cancel buttons) to span from
 	 * left to right but still indent dialog content
 	 */
+
   margin: -10px -8px;
   padding: 10px 8px;
 }
 .claro .dijitDialogPaneActionBar {
   /* gray bar at bottom of dialog with OK/Cancel buttons */
 
-  background-color: #efefef;
+  background-color: #ffffff;
   padding: 3px 5px 2px 7px;
   text-align: right;
-  border-top: 1px solid #d3d3d3;
+  border-top: 1px solid #dddddd;
 }
 .claro .dijitDialogPaneContent .dijitDialogPaneActionBar {
   margin: 10px -8px -10px;
@@ -73,24 +74,19 @@
 .claro .dijitDialogTitleBar {
   /* outer container for the titlebar of the dialog */
 
-  border: 1px solid #ffffff;
-  border-top: none;
-  background-color: #abd6ff;
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
-  padding: 5px 7px 4px 7px;
+  border: none;
+  background-color: #eeeeee;
+  background-image: none;
+  padding: 7px 7px 6px;
 }
 .claro .dijitDialogTitle {
   /* typography and styling of the dialog title */
 
   padding: 0 1px;
   font-size: 1.091em;
-  color: #000000;
+  line-height: 1.23;
+  font-weight: bold;
+  color: #444444;
 }
 .claro .dijitDialogCloseIcon {
   /* the default close icon for the dialog */
@@ -138,12 +134,9 @@
   /* the part with the text */
 
   background-color: #ffffff;
-  background-image: -moz-linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px);
-  background-image: -webkit-linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px);
-  background-image: -o-linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px);
-  background-image: linear-gradient(bottom, rgba(207, 229, 250, 0.1) 0px, #ffffff 10px);
+  background-image: none;
   background-position: bottom;
-  border: 1px solid #759dc0;
+  border: 1px solid #cccccc;
   padding: 6px 8px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -151,7 +144,7 @@
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   font-size: 1em;
-  color: #000000;
+  color: #444444;
 }
 .claro .dijitTooltipConnector {
   /* the arrow piece */
@@ -219,5 +212,5 @@
   height: 14px;
 }
 .claro .dijitDialogUnderlay {
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
 }

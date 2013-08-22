@@ -34,14 +34,8 @@
 /* button */
 .claro .dijitSpinner .dijitArrowButton {
   width: auto;
-  background-color: #efefef;
-  background-image: url("../images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background-color: #eeeeee;
+  background-image: none;
   overflow: hidden;
 }
 .dj_iequirks .claro .dijitSpinner .dijitArrowButton {
@@ -54,7 +48,7 @@
 }
 /* up & down button icons */
 .claro .dijitSpinner .dijitArrowButtonInner {
-  border: solid 1px #ffffff;
+  border: solid 1px transparent;
   border-bottom-width: 0;
   /* 2 top borders = 1 top+bottom border in ComboBox */
 
@@ -94,12 +88,12 @@
 /** hover & focused status **/
 .claro .dijitUpArrowButtonActive,
 .claro .dijitDownArrowButtonActive {
-  background-color: #abd6ff;
+  background-color: #dddddd;
 }
 .claro .dijitSpinner .dijitUpArrowButtonHover,
 .claro .dijitSpinner .dijitDownArrowButtonHover,
 .claro .dijitSpinnerFocused .dijitArrowButton {
-  background-color: #abd6ff;
+  background-color: #e5e5e5;
 }
 .claro .dijitSpinner .dijitUpArrowButtonHover .dijitArrowButtonInner {
   background-position: -174px;
@@ -115,13 +109,7 @@
 .claro .dijitSpinner .dijitDownArrowButtonActive,
 .claro .dijitSpinner .dijitUpArrowButtonActive {
   background-color: #7dbefa;
-  background-image: url("../images/activeGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background-image: none;
 }
 .claro .dijitSpinner .dijitUpArrowButtonActive .dijitArrowButtonInner,
 .claro .dijitSpinner .dijitDownArrowButtonActive .dijitArrowButtonInner {
@@ -140,7 +128,7 @@
 }
 /* disabled */
 .claro .dijitSpinnerDisabled .dijitArrowButtonInner {
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 .claro .dijitSpinnerDisabled .dijitUpArrowButton .dijitArrowButtonInner {
   background-position: -104px;

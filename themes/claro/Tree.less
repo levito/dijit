@@ -1,24 +1,24 @@
-/* Tree 
- * 
+/* Tree
+ *
  * Styling Tree mostly means styling the TreeRow (dijitTreeRow)
  * There are 4 basic states to style:
- * 
+ *
  * Tree Row:
- * 1. tree row (default styling): 
+ * 1. tree row (default styling):
  * 		.dijitTreeRow - styles for each row of the tree
  *
  * 2. hovered tree row (mouse hover on a tree row)
  * 		.dijitTreeRowHover - styles when mouse over on one row
- * 
+ *
  * 3. active tree row (mouse down on a tree row)
  * 		.dijitTreeRowActive - styles when mouse down on one row
- * 
+ *
  * 4. selected tree row
  * 		dijitTreeRowSelected - style when the row has been selected
- * 
+ *
  * Tree Expando:
  * 	    dijitTreeExpando - the expando at the left of the text of each tree row
- * 
+ *
  * Drag and Drop on TreeNodes: (insert line on dijitTreeContent node so it'll aligned w/ target element)
  * 		.dijitTreeNode .dojoDndItemBefore/.dojoDndItemAfter - use border style simulate a separate line
  */
@@ -53,15 +53,17 @@
 	color: @text-color;
 
 	.transition-property(background-color, border-color);
-	.transition-duration(.25s);
+	.transition-duration(.1s);
 	.transition-timing-function(ease-out);
 }
 
 .claro .dijitTreeRowSelected {
-	background-color: @selected-background-color;
+	// background-color: @selected-background-color;
+	background: @hovered-background-color;
 	.standard-gradient;
 	padding: 3px 0 1px;
-	border-color: @selected-border-color;
+	// border-color: @selected-border-color;
+	border-color: transparent;
 	border-width: 1px 0;
 	color: @selected-text-color;
 }
@@ -69,16 +71,18 @@
 	background-color: @hovered-background-color;
 	.standard-gradient;
 	padding: 3px 0 1px;
-	border-color: @hovered-border-color;
+	// border-color: @hovered-border-color;
+	border-color: transparent;
 	border-width: 1px 0;
 	color: @hovered-text-color;
-	.transition-duration(.25s);
+	.transition-duration(0);
 }
 .claro .dijitTreeRowActive {
 	background-color:@pressed-background-color;
 	.active-gradient;
 	padding: 3px 0 1px;
-	border-color: @pressed-border-color;
+	// border-color: @pressed-border-color;
+	border-color: transparent;
 	border-width: 1px 0;
 	color: @selected-text-color;
 }

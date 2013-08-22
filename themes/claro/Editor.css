@@ -21,7 +21,7 @@
   background-color: #ffffff;
 }
 .claro .dijitEditor {
-  border: 1px solid #b5bcc7;
+  border: 1px solid #d8d8d8;
 }
 .claro .dijitEditor .dijitEditorIFrameContainer {
   background-color: #ffffff;
@@ -29,7 +29,7 @@
 }
 .claro .dijitEditorHover .dijitEditorIFrameContainer,
 .claro .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame {
-  background-color: #e5f2fe;
+  background-color: #ffffff;
 }
 .claro .dijitEditorFocused .dijitEditorIFrameContainer,
 .claro .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
@@ -37,19 +37,16 @@
 }
 .claro .dijitEditorHover .dijitEditorIFrameContainer,
 .claro .dijitEditorFocused .dijitEditorIFrameContainer {
-  background-image: -moz-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
-  background-image: -webkit-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
-  background-image: -o-linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
-  background-image: linear-gradient(rgba(127, 127, 127, 0.2) 0%, rgba(127, 127, 127, 0) 2px);
+  background-image: none;
 }
 /* Disabled */
 .claro .dijitEditorDisabled {
-  border: 1px solid #d3d3d3;
-  color: #818181;
+  border: 1px solid #dddddd;
+  color: rgba(68, 68, 68, 0.5);
 }
 .claro .dijitDisabled .dijitEditorIFrame,
 .claro .dijitDisabled .dijitEditorIFrameContainer,
 .claro .dijitDisabled .dijitEditorIFrameContainer .dijitEditorIFrame {
-  background-color: #efefef;
+  background-color: #ffffff;
   background-image: none;
 }

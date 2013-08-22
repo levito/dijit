@@ -63,12 +63,13 @@
 	/* color for (outer) border on *TextBox widgets, and border between input and buttons on ComboBox and Spinner */
 	border-color: @border-color;
 	.transition-property(background-color, border);
- 	.transition-duration(.35s);
+ 	.transition-duration(.2s);
 }
 
 .claro .dijitSelect,
 .claro .dijitTextBox {
 	background-color: @textbox-background-color;
+	.border-radius(@button-border-radius);
 }
 
 /* hover */
@@ -77,7 +78,7 @@
 .claro .dijitTextBoxHover,
 .claro .dijitTextBoxHover .dijitButtonNode {
 	border-color: @hovered-border-color;
- 	.transition-duration(.25s);
+ 	.transition-duration(.2s);
 }
 
 .claro .dijitTextBoxHover {
@@ -99,7 +100,11 @@
 .claro .dijitTextBoxFocused,
 .claro .dijitTextBoxFocused .dijitButtonNode {
 	border-color:@focused-border-color;
- 	.transition-duration(.1s);
+ 	.transition-duration(0);
+	.box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.1));
+}
+.claro .dijitSelectFocused .dijitButtonContents {
+	.box-shadow(none);
 }
 
 .claro .dijitTextBoxFocused {
@@ -107,7 +112,8 @@
 	.textbox-background-image;
 }
 .claro .dijitTextBoxFocused .dijitInputContainer {
-	background: @textbox-focused-background-color;
+	// background: @textbox-focused-background-color;
+	background: transparent;
 }
 
 .claro .dijitSelectErrorFocused,
@@ -128,7 +134,8 @@
 .claro .dijitSelectDisabled,
 .claro .dijitTextBoxDisabled,
 .claro .dijitTextBoxDisabled .dijitInputContainer {
-	background-color: @textbox-disabled-background-color;
+	// background-color: @textbox-disabled-background-color;
+	background-color: transparent;
 	background-image: none;
 }
 
@@ -207,7 +214,7 @@
 	background-color: @pressed-background-color;
 	.active-gradient("../");
 	padding: 1px;		// Since no border on arrow button (see rule below)
-}	
+}
 
 .dj_iequirks .claro .dijitComboBox .dijitHasDropDownOpen {
 	padding: 1px 0;

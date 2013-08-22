@@ -1,7 +1,7 @@
 /* Select
- * 
+ *
  * Styling Select mainly includes:
- * 
+ *
  * 1. Containers
  * 		.dijitSelect - for border, background-color
  * 		.dijitButtonContents - for border
@@ -9,12 +9,12 @@
  * 2. Arrow
  * 		.dijitArrowButton - for border, padding and background-color|image
  * 		.dijitArrowButtonInner - for border, background-color|image, display and width|height
- * 
+ *
  * 3. Menu
  * 		.dijitSelectMenu .* - for border, padding
- * 
+ *
  * 4. Various states
- * 		.dijitSelectHover|.dijitSelectFocused|.dijitSelectDisabled .* - for border, padding and background-color|image 
+ * 		.dijitSelectHover|.dijitSelectFocused|.dijitSelectDisabled .* - for border, padding and background-color|image
  */
 
 @import "../variables";
@@ -51,13 +51,15 @@
 
 /* focused status */
 .claro .dijitSelectFocused .dijitArrowButton {
-	background-color:#7dbefa;		// TODO.  Mailed Jason about inconsistent ComboBox/Spinner behavior.
+	// background-color:#7dbefa;		// TODO.  Mailed Jason about inconsistent ComboBox/Spinner behavior.
+	background-color: @arrowbutton-hovered-background-color;
 	.active-gradient("../");
 }
 
 .claro .dijitSelectFocused .dijitArrowButton {
 	border: none;
 	padding: 1px;
+	.box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.1));
 }
 
 .claro .dijitSelectFocused .dijitArrowButton .dijitArrowButtonInner {
@@ -78,9 +80,9 @@
 
 /* Dropdown menu style for select */
 .claro .dijitSelectMenu td.dijitMenuItemIconCell,
-.claro .dijitSelectMenu td.dijitMenuArrowCell { 
+.claro .dijitSelectMenu td.dijitMenuArrowCell {
 	/* so that arrow and icon cells from MenuItem are not displayed */
-	display: none;  
+	display: none;
 }
 
 .claro .dijitSelectMenu td.dijitMenuItemLabel {

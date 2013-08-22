@@ -1,47 +1,47 @@
-/* TabContainer 
- * 
+/* TabContainer
+ *
  * Styling TabContainer means styling the TabList and Its content container  (dijitTitlePane)
- * 
+ *
  * Tab List: (including 4 kinds of tab location)
  * 		.dijitTabContainerTop-tabs     - tablist container at top
  * 		.dijitTabContainerBottom-tabs  - tablist container at bottom
  * 		.dijitTabContainerLeft-tabs    - tablist container at left
  * 		.dijitTabContainerRight-tabs   - tablist container at right
- * 
+ *
  * Tab Strip Button:
  * 		.dijitTabStripIcon - tab strip button icon
  * 		.dijitTabStripMenuIcon - down arrow icon position
  * 		.dijitTabStripSlideLeftIcon - left arrow icon position
  * 		.dijitTabStripSlideRightIcon - right arrow icon position
- * 
+ *
  * 		.tabStripButtonDisabled - styles for disabled tab strip buttons
- * 
+ *
  * Tab Button:
  * 		.dijitTabContainerTop-tabs .dijitTab     - styles for top tab button container
  * 		.dijitTabContainerBottom-tabs .dijitTab  - styles for bottom tab button container
  * 		.dijitTabContainerLeft-tabs .dijitTab    - styles for left tab button container
  * 		.dijitTabContainerRight-tabs .dijitTab   - styles for right tab button container
- * 
+ *
  * 		.dijitTabContainerTop-tabs .dijitTabChecked .dijitTab
  * 				- styles for selected status of top tab button
  * 		same to Bottom, Left, Right Tabs
- * 
+ *
  * 		.dijitTabHover .dijitTab   - styles when mouse hover on tab buttons
  * 		.dijitTabActive .dijitTab  - styles when mouse down on tab buttons
  * 		.dijitTabChecked .dijitTab  - styles when on buttons of selected tab
- * 
+ *
  * 		.dijitTabCloseButton - the close action buttons lie at the right top of each tab button on closable tabs
  * 		.dijitTabCloseButtonHover - styles when mouse hover on close action button
  * 		.dijitTabCloseButtonActive - styles when mouse down on close action button
- * 
+ *
  * Tab Button: (checked status)
- * 
+ *
  * Tab Content Container:
  * 		.dijitTabContainerTop-dijitContentPane
  * 		.dijitTabContainerBottom-dijitContentPane
  * 		.dijitTabContainerLeft-dijitContentPane
  * 		.dijitTabContainerRight-dijitContentPane - for background and padding
- * 
+ *
  * Nested Tabs:
  * 		.dijitTabContainerNested - Container for nested tabs
  * 		.dijitTabContainerTabListNested - tab list container for nested tabs
@@ -132,11 +132,12 @@
 	text-align: center;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabTopUnselected.png");
-	background-repeat: repeat-x;
+	// background-image: url("images/tabTopUnselected.png");
+	// background-repeat: repeat-x;
 	.unselected-tab-gradient(top);
 
- 	.box-shadow(0 -1px 1px rgba(0, 0, 0, 0.04));
+ 	// .box-shadow(0 -1px 1px rgba(0, 0, 0, 0.04));
+ 	.box-shadow(none);
 }
 
 .claro .dijitTabContainerTop-tabs .dijitTabChecked {
@@ -145,10 +146,11 @@
 	padding-top: 9px;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabTopSelected.png");
+	// background-image: url("images/tabTopSelected.png");
 	.topBottom-selected-tab-gradient (top);
 
-	.box-shadow(0 -1px 2px rgba(0, 0, 0, 0.05));
+	// .box-shadow(0 -1px 2px rgba(0, 0, 0, 0.05));
+	.box-shadow(none);
 }
 
 /** end top tab **/
@@ -165,12 +167,13 @@
 	text-align: center;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabBottomUnselected.png");
-	background-repeat: repeat-x;
+	// background-image: url("images/tabBottomUnselected.png");
+	// background-repeat: repeat-x;
 	background-position: bottom;
 	.unselected-tab-gradient(bottom);
 
-	.box-shadow(0 1px 1px rgba(0, 0, 0, 0.04));
+	// .box-shadow(0 1px 1px rgba(0, 0, 0, 0.04));
+	.box-shadow(none);
 }
 
 /* selected tab */
@@ -179,10 +182,11 @@
 	padding-top: 4px;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabBottomSelected.png");
+	// background-image: url("images/tabBottomSelected.png");
 	.topBottom-selected-tab-gradient (bottom);
 
-	.box-shadow(0 1px 2px rgba(0, 0, 0, 0.05));
+	// .box-shadow(0 1px 2px rgba(0, 0, 0, 0.05));
+	.box-shadow(none);
 }
 /** end bottom tab **/
 
@@ -194,8 +198,8 @@
 	padding:3px 8px 4px 4px;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabLeftUnselected.png");
-	background-repeat: repeat-y;
+	// background-image: url("images/tabLeftUnselected.png");
+	// background-repeat: repeat-y;
 	.unselected-tab-gradient(left);
 }
 
@@ -205,10 +209,11 @@
 	padding-right: 9px;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabLeftSelected.png");
+	// background-image: url("images/tabLeftSelected.png");
 	.alpha-white-gradient (left, 0.5,0px, 1,30px);  // 1/2 inch blue gradient, remainder white
 
-	.box-shadow(-1px 0 2px rgba(0, 0, 0, .05));
+	// .box-shadow(-1px 0 2px rgba(0, 0, 0, .05));
+	.box-shadow(none);
 }
 /** end left tab **/
 
@@ -220,8 +225,8 @@
 	padding:3px 8px 4px 4px;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabRightUnselected.png");
-	background-repeat: repeat-y;
+	// background-image: url("images/tabRightUnselected.png");
+	// background-repeat: repeat-y;
 	background-position: right;
 	.unselected-tab-gradient(right);
 }
@@ -231,10 +236,11 @@
 	border-left-width: 0;
 
 	// gradient (CSS gradient, with backup image for IE6-9)
-	background-image: url("images/tabRightSelected.png");
+	// background-image: url("images/tabRightSelected.png");
 	.alpha-white-gradient (right, 0.5,0px, 1,30px);	// 1/2 inch blue gradient, remainder white
 
-	.box-shadow(1px 0 2px rgba(0, 0, 0, 0.07));
+	// .box-shadow(1px 0 2px rgba(0, 0, 0, 0.07));
+	.box-shadow(none);
 }
 /** end right tab **/
 
@@ -302,7 +308,7 @@
 }
 .claro .tabStripButtonDisabled .dijitTabStripMenuIcon {
 	background-position: -151px 50%;
-} 
+}
 /* Nested Tabs */
 .claro .dijitTabContainerNested .dijitTabListWrapper {
 	height: auto;

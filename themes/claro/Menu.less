@@ -1,30 +1,30 @@
-/* Menu 
+/* Menu
 
-There are three areas of styling for the Menu:  
- 
- 1. The menu 
+There are three areas of styling for the Menu:
+
+ 1. The menu
  	There are three types of menus:
  	i) Context Menu
  	ii) Drop down Menu
  	iii) Navigation Menu
  	All three types of menus are affected by the .dijitMenu class in which you can set the background-color, padding and border
  	.dijitMenu affects the drop down menu in TimeTextBox, Calendar, ComboBox and FilteringSelect
-  .dijitMenuTable - for padding - also affects Select widget 	
+  .dijitMenuTable - for padding - also affects Select widget
 
  2. The menu bar
  	.dijitMenuBar - for border, margins, padding, background-color of the menu bar
- 	.dijitMenuBar .dijitMenuItem - for padding, text color of menu items in the menu bar (overrides .dijitMenuItem) 
- 	
- 3. Menu items - items in the menu.  
+ 	.dijitMenuBar .dijitMenuItem - for padding, text color of menu items in the menu bar (overrides .dijitMenuItem)
+
+ 3. Menu items - items in the menu.
  	.dijitMenuItem - for color
- 	.dijitMenuItemHover, .dijitMenuItemSelected - for background-color, border, text color, padding of a menu item or menubar item that has been hovered over or selected	
+ 	.dijitMenuItemHover, .dijitMenuItemSelected - for background-color, border, text color, padding of a menu item or menubar item that has been hovered over or selected
  	.dijitMenuItemActive - for background-color of an active (mousedown) menu item
 	td.dijitMenuItemIconCell - for padding around a  menu item's icon
-	td.dijitMenuItemLabel - for padding around a menu item's label	
+	td.dijitMenuItemLabel - for padding around a menu item's label
 	.dijitMenuSeparatorTop - for border, top border, of the separator
 	.dijitMenuSeparatorBottom - for bottom margin of the separator
-	
-	Styles specific to ComboBox and FilteringSelect widgets: 
+
+	Styles specific to ComboBox and FilteringSelect widgets:
 	.dijitComboBoxMenu .dijitMenuItem - for padding and border of a menu item in a ComboBox or FilteringSelect widget's menu
 	.dijitComboBoxMenu .dijitMenuItemSelected- for text color, background-color and border of a menu item in a ComboBox or FilteringSelect widget's menu
 
@@ -55,7 +55,8 @@ There are three areas of styling for the Menu:
 .claro .dijitMenuBar .dijitMenuItemHover,
 .claro .dijitMenuBar .dijitMenuItemSelected {
 	// on hover or selection of MenuBar item, add border and reduce padding to compensate
-	border:solid 1px @hovered-border-color;
+	// border:solid 1px @hovered-border-color;
+	border: 1px solid transparent;
 	padding: 5px 9px 6px;
 }
 
@@ -71,7 +72,8 @@ There are three areas of styling for the Menu:
 	padding: @textbox-padding;	// Make drop down menu text line up with text in <input>.
 	border-width:1px 0 1px 0;
 	border-style:solid;
-	border-color: @select-dropdownitem-background-color;
+	// border-color: @select-dropdownitem-background-color;
+	border-color: transparent;
 }
 
 /* hover over a MenuItem or MenuBarItem */
@@ -82,7 +84,8 @@ There are three areas of styling for the Menu:
 .claro .dijitMenuItemSelected {
 	// note: seems like the selected MenuItem should use @pressed-background-color
 	// and .active-gradient, but claro didn't to that
-	border-color: @hovered-border-color;
+	// border-color: @hovered-border-color;
+	border-color: transparent;
 	background-color: @hovered-background-color;
 	.standard-gradient;
 }
@@ -164,7 +167,8 @@ There are three areas of styling for the Menu:
 	// But the selected item in a Select drop down is different than when MenuBarItem "File" is highlighted
 	// because the user is on the file menu?
 	color:@selected-text-color;
-	border-color:@hovered-border-color;
+	// border-color:@hovered-border-color;
+	border-color: transparent;
 	background-color:@hovered-background-color;
 }
 

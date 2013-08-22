@@ -4,42 +4,53 @@
 @import url("../../../dojo/resources/dojo.css");
 
 .claro {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: .688em;
+  font: normal normal normal 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: @document-text-color;
 }
 
-/* Headings */
+:focus {
+	outline: none;
+}
+input[type="search"] {
+	-webkit-appearance: none;
+}
+// button::-moz-focus-inner,
+// input::-moz-focus-inner {
+//     border: 0;
+//     padding: 0;
+// }
+
+// /* Headings */
 .claro h1 {
-	font-size: 1.545em; 
+	font-size: 1.545em;
 	margin-bottom:0.727em;
 }
-.claro h2 { 
-	font-size: 1.364em; 
-	line-height: 1.455em; 
-	margin-top:1em; 
+.claro h2 {
+	font-size: 1.364em;
+	line-height: 1.455em;
+	margin-top:1em;
 	margin-bottom:0.60em;
 	font-weight: normal;
 }
 .claro h3, .claro h4, .claro h5, .claro h6 {
-	font-size:1.091em; 
-	font-weight: normal; 
+	font-size:1.091em;
+	font-weight: normal;
 }
 
-/* paragraphs, quotes and lists */
-.claro p { 
-	line-height: 1.3em;
-}
+// /* paragraphs, quotes and lists */
+// .claro p {
+// 	line-height: 1.3em;
+// }
 
-/* pre and code */
-.claro pre, .claro code { 
-	font-family:inherit; 
-	background-color: @document-shadedsection-background-color; 
-	border: 1px solid @document-border-color;
-}
+// /* pre and code */
+// .claro pre, .claro code {
+// 	font-family:inherit;
+// 	background-color: @document-shadedsection-background-color;
+// 	border: 1px solid @document-border-color;
+// }
 
 /* tables */
-.claro table.dojoTabular thead, .claro table.dojoTabular tfoot { 
-	background-color: @document-shadedsection-background-color; 
-	border: 1px solid @document-border-color; 
+.claro table.dojoTabular thead, .claro table.dojoTabular tfoot {
+	background-color: @document-shadedsection-background-color;
+	border: 1px solid @document-border-color;
 }

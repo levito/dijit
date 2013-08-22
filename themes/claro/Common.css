@@ -13,12 +13,12 @@
 }
 /* The highlight is shown in the ComboBox menu.  TODO: move to form/Common.less */
 .claro .dijitComboBoxHighlightMatch {
-  background-color: #abd6ff;
+  background-color: #d8d8d8;
 }
 .claro .dijitFocusedLabel {
   /* for checkboxes or radio buttons, hatch border around the corresponding label, to indicate focus */
 
-  outline: 1px dotted #494949;
+  outline: 1px dotted #cccccc;
 }
 /* Drag and Drop*/
 .claro .dojoDndItem {
@@ -31,38 +31,26 @@
   transition-property: background-color, border-color;
 }
 .claro .dojoDndItemOver {
-  background-color: #abd6ff;
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background-color: #e5e5e5;
+  background-image: none;
   padding: 1px;
-  border: solid 1px #759dc0;
-  color: #000000;
+  border: solid 1px #cccccc;
+  color: #222222;
 }
 .claro .dojoDndItemAnchor,
 .claro .dojoDndItemSelected {
-  background-color: #cfe5fa;
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background-color: #ffffff;
+  background-image: none;
   padding: 1px;
-  border: solid 1px #759dc0;
-  color: #000000;
+  border: solid 1px #cccccc;
+  color: #222222;
 }
 .claro .dojoDndItemBefore,
 .claro .dojoDndItemAfter {
-  border-color: #759dc0;
+  border-color: #cccccc;
 }
 .claro table.dojoDndAvatar {
-  border: 1px solid #b5bcc7;
+  border: 1px solid #d8d8d8;
   border-collapse: collapse;
   background-color: #ffffff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);

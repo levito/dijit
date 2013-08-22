@@ -1,24 +1,24 @@
-/* Tree 
- * 
+/* Tree
+ *
  * Styling Tree mostly means styling the TreeRow (dijitTreeRow)
  * There are 4 basic states to style:
- * 
+ *
  * Tree Row:
- * 1. tree row (default styling): 
+ * 1. tree row (default styling):
  * 		.dijitTreeRow - styles for each row of the tree
  *
  * 2. hovered tree row (mouse hover on a tree row)
  * 		.dijitTreeRowHover - styles when mouse over on one row
- * 
+ *
  * 3. active tree row (mouse down on a tree row)
  * 		.dijitTreeRowActive - styles when mouse down on one row
- * 
+ *
  * 4. selected tree row
  * 		dijitTreeRowSelected - style when the row has been selected
- * 
+ *
  * Tree Expando:
  * 	    dijitTreeExpando - the expando at the left of the text of each tree row
- * 
+ *
  * Drag and Drop on TreeNodes: (insert line on dijitTreeContent node so it'll aligned w/ target element)
  * 		.dijitTreeNode .dojoDndItemBefore/.dojoDndItemAfter - use border style simulate a separate line
  */
@@ -46,61 +46,43 @@
   background-position: 0 0;
   background-repeat: repeat-x;
   border: solid 0 transparent;
-  color: #000000;
+  color: #444444;
   -webkit-transition-property: background-color, border-color;
   -moz-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  transition-duration: 0.25s;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  transition-duration: 0.1s;
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .claro .dijitTreeRowSelected {
-  background-color: #cfe5fa;
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background: #e5e5e5;
+  background-image: none;
   padding: 3px 0 1px;
-  border-color: #759dc0;
+  border-color: transparent;
   border-width: 1px 0;
-  color: #000000;
+  color: #222222;
 }
 .claro .dijitTreeRowHover {
-  background-color: #abd6ff;
-  background-image: url("images/standardGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background-color: #e5e5e5;
+  background-image: none;
   padding: 3px 0 1px;
-  border-color: #759dc0;
+  border-color: transparent;
   border-width: 1px 0;
-  color: #000000;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  transition-duration: 0.25s;
+  color: #222222;
+  -webkit-transition-duration: 0;
+  -moz-transition-duration: 0;
+  transition-duration: 0;
 }
 .claro .dijitTreeRowActive {
-  background-color: #7dbdfa;
-  background-image: url("images/activeGradient.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
-  _background-image: none;
+  background-color: #dddddd;
+  background-image: none;
   padding: 3px 0 1px;
-  border-color: #759dc0;
+  border-color: transparent;
   border-width: 1px 0;
-  color: #000000;
+  color: #222222;
 }
 .claro .dijitTreeRowFocused {
   background-repeat: repeat;
@@ -140,8 +122,8 @@
  * though dijitTreeRowNode is the actual "drag object"
  */
 .claro .dijitTreeNode .dojoDndItemBefore .dijitTreeContent {
-  border-top: 2px solid #759dc0;
+  border-top: 2px solid #cccccc;
 }
 .claro .dijitTreeNode .dojoDndItemAfter .dijitTreeContent {
-  border-bottom: 2px solid #759dc0;
+  border-bottom: 2px solid #cccccc;
 }

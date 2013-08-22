@@ -54,17 +54,17 @@
   outline: 1px;
 }
 .claro .dijitSliderFocused .dijitSliderBar {
-  border-color: #759dc0;
+  border-color: #cccccc;
 }
 .claro .dijitSliderHover .dijitSliderBar {
-  border-color: #759dc0;
+  border-color: #cccccc;
 }
 .claro .dijitSliderDisabled .dijitSliderBar {
   background-image: none;
-  border-color: #d3d3d3;
+  border-color: #dddddd;
 }
 .claro .dijitRuleLabelsContainer {
-  color: #000000;
+  color: #444444;
 }
 /* Horizontal Slider */
 .claro .dijitRuleLabelsContainerH {
@@ -72,38 +72,35 @@
 }
 .claro .dijitSlider .dijitSliderProgressBarH,
 .claro .dijitSlider .dijitSliderLeftBumper {
-  border-color: #b5bcc7;
-  background-color: #cfe5fa;
-  background-image: -moz-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px);
-  background-image: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px);
-  background-image: -o-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px);
-  background-image: linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px);
+  border-color: #d8d8d8;
+  background-color: #ffffff;
+  background-image: none;
 }
 .claro .dijitSlider .dijitSliderRemainingBarH,
 .claro .dijitSlider .dijitSliderRightBumper {
-  border-color: #b5bcc7;
+  border-color: #d8d8d8;
   background-color: #ffffff;
 }
 .claro .dijitSliderRightBumper {
-  border-right: solid 1px #b5bcc7;
+  border-right: solid 1px #d8d8d8;
 }
 .claro .dijitSliderLeftBumper {
-  border-left: solid 1px #b5bcc7;
+  border-left: solid 1px #d8d8d8;
 }
 .claro .dijitSliderHover .dijitSliderProgressBarH,
 .claro .dijitSliderHover .dijitSliderLeftBumper {
-  background-color: #abd6ff;
-  border-color: #759dc0;
+  background-color: #eeeeee;
+  border-color: #cccccc;
 }
 .claro .dijitSliderHover .dijitSliderRemainingBarH,
 .claro .dijitSliderHover .dijitSliderRightBumper {
   background-color: #ffffff;
-  border-color: #759dc0;
+  border-color: #cccccc;
 }
 .claro .dijitSliderFocused .dijitSliderProgressBarH,
 .claro .dijitSliderFocused .dijitSliderLeftBumper {
-  background-color: #abd6ff;
-  border-color: #759dc0;
+  background-color: #eeeeee;
+  border-color: #cccccc;
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -111,21 +108,21 @@
 .claro .dijitSliderFocused .dijitSliderRemainingBarH,
 .claro .dijitSliderFocused .dijitSliderRightBumper {
   background-color: #ffffff;
-  border-color: #759dc0;
+  border-color: #cccccc;
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .claro .dijitSliderDisabled .dijitSliderProgressBarH,
 .claro .dijitSliderDisabled .dijitSliderLeftBumper {
-  background-color: #d3d3d3;
+  background-color: #dddddd;
   /* left side of slider, fill matches border */
 
   background-image: none;
 }
 .claro .dijitSliderDisabled .dijitSliderRemainingBarH,
 .claro .dijitSliderDisabled .dijitSliderRightBumper {
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 /* Vertical Slider */
 .claro .dijitRuleLabelsContainerV {
@@ -133,38 +130,35 @@
 }
 .claro .dijitSlider .dijitSliderProgressBarV,
 .claro .dijitSlider .dijitSliderBottomBumper {
-  border-color: #b5bcc7;
-  background-color: #cfe5fa;
-  background-image: -moz-linear-gradient(left, #ffffff 0px, rgba(255, 255, 255, 0) 1px);
-  background-image: -webkit-linear-gradient(left, #ffffff 0px, rgba(255, 255, 255, 0) 1px);
-  background-image: -o-linear-gradient(left, #ffffff 0px, rgba(255, 255, 255, 0) 1px);
-  background-image: linear-gradient(left, #ffffff 0px, rgba(255, 255, 255, 0) 1px);
+  border-color: #d8d8d8;
+  background-color: #ffffff;
+  background-image: none;
 }
 .claro .dijitSlider .dijitSliderRemainingBarV,
 .claro .dijitSlider .dijitSliderTopBumper {
-  border-color: #b5bcc7;
+  border-color: #d8d8d8;
   background-color: #ffffff;
 }
 .claro .dijitSliderBottomBumper {
-  border-bottom: solid 1px #b5bcc7;
+  border-bottom: solid 1px #d8d8d8;
 }
 .claro .dijitSliderTopBumper {
-  border-top: solid 1px #b5bcc7;
+  border-top: solid 1px #d8d8d8;
 }
 .claro .dijitSliderHover .dijitSliderProgressBarV,
 .claro .dijitSliderHover .dijitSliderBottomBumper {
-  background-color: #abd6ff;
-  border-color: #759dc0;
+  background-color: #eeeeee;
+  border-color: #cccccc;
 }
 .claro .dijitSliderHover .dijitSliderRemainingBarV,
 .claro .dijitSliderHover .dijitSliderTopBumper {
   background-color: #ffffff;
-  border-color: #759dc0;
+  border-color: #cccccc;
 }
 .claro .dijitSliderFocused .dijitSliderProgressBarV,
 .claro .dijitSliderFocused .dijitSliderBottomBumper {
-  background-color: #abd6ff;
-  border-color: #759dc0;
+  background-color: #eeeeee;
+  border-color: #cccccc;
   -webkit-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
@@ -172,20 +166,20 @@
 .claro .dijitSliderFocused .dijitSliderRemainingBarV,
 .claro .dijitSliderFocused .dijitSliderTopBumper {
   background-color: #ffffff;
-  border-color: #759dc0;
+  border-color: #cccccc;
   -webkit-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
 }
 .claro .dijitSliderDisabled .dijitSliderProgressBarV,
 .claro .dijitSliderDisabled .dijitSliderBottomBumper {
-  background-color: #d3d3d3;
+  background-color: #dddddd;
   /* bottom side of slider, fill matches border */
 
 }
 .claro .dijitSliderDisabled .dijitSliderRemainingBarV,
 .claro .dijitSliderDisabled .dijitSliderTopBumper {
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 /* ------- Thumbs ------- */
 .claro .dijitSliderImageHandleH {
@@ -249,10 +243,10 @@
 .claro .dijitSliderIncrementIconV {
   background-image: url("../form/images/commonFormArrows.png");
   background-repeat: no-repeat;
-  background-color: #efefef;
+  background-color: #eeeeee;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  border: solid 1px #b5bcc7;
+  border: solid 1px #d8d8d8;
   font-size: 1px;
 }
 .claro .dijitSliderDecrementIconH,
@@ -275,7 +269,7 @@
 .claro .dijitSliderHover .dijitSliderIncrementIconV {
   /* dijitSliderActive should be treated as dijitSliderHover since "clicking the slider" has no meaning */
 
-  border: solid 1px #759dc0;
+  border: solid 1px #cccccc;
   background-color: #ffffff;
 }
 .claro .dijitSliderDecrementIconH {
@@ -306,43 +300,43 @@
 .claro .dijitSliderButtonContainerH .dijitSliderDecrementButtonHover,
 .claro .dijitSliderButtonContainerV .dijitSliderIncrementButtonHover,
 .claro .dijitSliderButtonContainerH .dijitSliderIncrementButtonHover {
-  background-color: #cfe5fa;
+  background-color: #ffffff;
 }
 .claro .dijitSliderButtonContainerV .dijitSliderDecrementButtonActive,
 .claro .dijitSliderButtonContainerH .dijitSliderDecrementButtonActive,
 .claro .dijitSliderButtonContainerV .dijitSliderIncrementButtonActive,
 .claro .dijitSliderButtonContainerH .dijitSliderIncrementButtonActive {
-  background-color: #abd6ff;
-  border-color: #759dc0;
+  background-color: #eeeeee;
+  border-color: #bfbfbf;
 }
 .claro .dijitSliderButtonInner {
   visibility: hidden;
 }
 .claro .dijitSliderDisabled .dijitSliderBar {
-  border-color: #d3d3d3;
+  border-color: #dddddd;
 }
 .claro .dijitSliderReadOnly *,
 .claro .dijitSliderDisabled * {
-  border-color: #d3d3d3;
-  color: #818181;
+  border-color: #dddddd;
+  color: rgba(68, 68, 68, 0.5);
 }
 .claro .dijitSliderReadOnly .dijitSliderDecrementIconH,
 .claro .dijitSliderDisabled .dijitSliderDecrementIconH {
   background-position: -321px 50%;
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 .claro .dijitSliderReadOnly .dijitSliderIncrementIconH,
 .claro .dijitSliderDisabled .dijitSliderIncrementIconH {
   background-position: -215px 50%;
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 .claro .dijitSliderReadOnly .dijitSliderDecrementIconV,
 .claro .dijitSliderDisabled .dijitSliderDecrementIconV {
   background-position: -3px 49%;
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 .claro .dijitSliderReadOnly .dijitSliderIncrementIconV,
 .claro .dijitSliderDisabled .dijitSliderIncrementIconV {
   background-position: -107px 49%;
-  background-color: #efefef;
+  background-color: #eeeeee;
 }

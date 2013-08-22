@@ -1,39 +1,39 @@
 /* Button | DropDownButton | ComboButton | ToggleButton
- * 
+ *
  * Styling Buttons mainly includes:
- * 
+ *
  * 1. Containers
  * 		.dijitButton
  * 		.dijitDropDownButton
  * 		.dijitComboButton
- * 		.dijitButtonNode - common button/arrow wrapper shared across all three button types 
+ * 		.dijitButtonNode - common button/arrow wrapper shared across all three button types
  *
  * 2. Button text
  * 		.dijitButtonText
- * 
+ *
  * 3. Arrows - only for DropDownButton and ComboButton
  * 	     There are total four directions arrows - down, left, right, up:
  * 		.dijitArrowButtonInner - down arrow by default
  *      .dijitLeftArrowButton .dijitArrowButtonInner - left arrow
  *      .dijitRightArrowButton .dijitArrowButtonInner - right arrow
  *      .dijitUpArrowButton .dijitArrowButtonInner - up arrow
- * 
+ *
  * 4. States - Hover, Active, Disabled, e.g.
  * 		.dijitButtonHover .dijitButtonNode
  * 		.dijitButtonActive .dijitButtonNode
  * 		.dijitButtonDisabled .dijitButtonNode
- *      
- *      .dijitDisabled .dijitArrowButtonInner  - disabled arrow states 
+ *
+ *      .dijitDisabled .dijitArrowButtonInner  - disabled arrow states
  */
 .claro .dijitButtonNode {
   /* rules for dijit.form.*Button widgets and arrow nodes on ComboBox, Spinner etc. */
 
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-property: background-color, color;
+  -moz-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 .claro .dijitButton .dijitButtonNode,
 .claro .dijitDropDownButton .dijitButtonNode,
@@ -41,28 +41,20 @@
 .claro .dijitToggleButton .dijitButtonNode {
   /* rules for the dijit.form.*Button widgets (see also ComboButton section below) */
 
-  border: 1px solid #759dc0;
-  padding: 2px 4px 4px 4px;
-  color: #000000;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  background-color: #bcd8f4;
-  background-image: url("images/buttonEnabled.png");
-  background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  background-image: linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  _background-image: none;
+  border: 1px solid #d8d8d8;
+  padding: 2px 4px;
+  color: #666666;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #eeeeee;
+  background-image: none;
 }
 .claro .dijitComboButton .dijitArrowButton {
   border-left-width: 0;
-  padding: 4px 2px 4px 2px;
-  /* TODO: still needed? */
-
+  padding: 0 2px;
 }
 /*arrow styles for down/up/left/right directions*/
 .claro .dijitArrowButtonInner {
@@ -72,6 +64,13 @@
   background-image: url("../form/images/buttonArrows.png");
   background-repeat: no-repeat;
   background-position: -51px 53%;
+  opacity: .3;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 .claro .dijitLeftArrowButton .dijitArrowButtonInner {
   background-position: -77px 53%;
@@ -94,6 +93,18 @@
 .claro .dijitDisabled .dijitUpArrowButton .dijitArrowButtonInner {
   background-position: -100px 53%;
 }
+.claro .dijitOpened .dijitArrowButtonInner,
+.claro .dijitDropDownButtonHover .dijitArrowButtonInner,
+.claro .dijitSelectHover .dijitArrowButtonInner,
+.claro .dijitDownArrowButtonHover .dijitArrowButtonInner,
+.claro .dijitLeftArrowButtonHover .dijitArrowButtonInner,
+.claro .dijitRightArrowButtonHover .dijitArrowButtonInner,
+.claro .dijitUpArrowButtonHover .dijitArrowButtonInner {
+  opacity: .7;
+}
+.claro .dijitDisabled .dijitArrowButtonInner {
+  opacity: .2;
+}
 .claro .dijitButtonText {
   padding: 0 0.3em;
   text-align: center;
@@ -104,8 +115,9 @@
 .claro .dijitComboButton .dijitButtonNodeHover,
 .claro .dijitComboButton .dijitDownArrowButtonHover,
 .claro .dijitToggleButtonHover .dijitButtonNode {
-  background-color: #86bdf2;
-  color: #000000;
+  background-color: #e5e5e5;
+  border-color: #cccccc;
+  color: #222222;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
@@ -116,13 +128,15 @@
 .claro .dijitComboButtonActive .dijitButtonNode,
 .claro .dijitToggleButtonActive .dijitButtonNode,
 .claro .dijitToggleButtonChecked .dijitButtonNode {
-  background-color: #86bdf2;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
-  -webkit-transition-duration: 0.1s;
-  -moz-transition-duration: 0.1s;
-  transition-duration: 0.1s;
+  background-color: #dddddd;
+  border-color: #cccccc;
+  color: #222222;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0;
+  -moz-transition-duration: 0;
+  transition-duration: 0;
 }
 /* disabled status */
 .claro .dijitButtonDisabled,
@@ -136,18 +150,13 @@
 .claro .dijitDropDownButtonDisabled .dijitButtonNode,
 .claro .dijitComboButtonDisabled .dijitButtonNode,
 .claro .dijitToggleButtonDisabled .dijitButtonNode {
-  background-color: #efefef;
-  border: solid 1px #d3d3d3;
-  color: #818181;
-  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  background-image: url("images/buttonDisabled.png");
-  background-image: -moz-linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 40%);
-  background-image: -webkit-linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 40%);
-  background-image: -o-linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 40%);
-  background-image: linear-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 40%);
-  _background-image: none;
+  background-color: #eeeeee;
+  border: solid 1px #dddddd;
+  color: rgba(68, 68, 68, 0.5);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-image: none;
 }
 .claro .dijitComboButtonDisabled .dijitArrowButton {
   border-left-width: 0;
@@ -159,10 +168,10 @@
 
 }
 .claro .dijitComboButton .dijitStretch {
-  -moz-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
 }
 .claro .dijitComboButton .dijitArrowButton {
-  -moz-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
 }
