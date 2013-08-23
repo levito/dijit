@@ -89,7 +89,7 @@
 }
 .claro .dijitSliderHover .dijitSliderProgressBarH,
 .claro .dijitSliderHover .dijitSliderLeftBumper {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   border-color: #cccccc;
 }
 .claro .dijitSliderHover .dijitSliderRemainingBarH,
@@ -99,7 +99,7 @@
 }
 .claro .dijitSliderFocused .dijitSliderProgressBarH,
 .claro .dijitSliderFocused .dijitSliderLeftBumper {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   border-color: #cccccc;
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -147,7 +147,7 @@
 }
 .claro .dijitSliderHover .dijitSliderProgressBarV,
 .claro .dijitSliderHover .dijitSliderBottomBumper {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   border-color: #cccccc;
 }
 .claro .dijitSliderHover .dijitSliderRemainingBarV,
@@ -157,7 +157,7 @@
 }
 .claro .dijitSliderFocused .dijitSliderProgressBarV,
 .claro .dijitSliderFocused .dijitSliderBottomBumper {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   border-color: #cccccc;
   -webkit-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.2);
@@ -243,7 +243,7 @@
 .claro .dijitSliderIncrementIconV {
   background-image: url("../form/images/commonFormArrows.png");
   background-repeat: no-repeat;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   -moz-border-radius: 2px;
   border-radius: 2px;
   border: solid 1px #d8d8d8;
@@ -306,7 +306,7 @@
 .claro .dijitSliderButtonContainerH .dijitSliderDecrementButtonActive,
 .claro .dijitSliderButtonContainerV .dijitSliderIncrementButtonActive,
 .claro .dijitSliderButtonContainerH .dijitSliderIncrementButtonActive {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   border-color: #bfbfbf;
 }
 .claro .dijitSliderButtonInner {

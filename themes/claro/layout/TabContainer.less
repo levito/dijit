@@ -87,7 +87,7 @@
 }
 .claro .dijitTab {
 	border: 1px solid @border-color;
-	background-color:@unselected-background-color;
+	background-color:@button-background-color;
 	.transition-property(background-color, border);
  	.transition-duration(.35s);
 	color:@unselected-text-color;
@@ -107,7 +107,7 @@
 .claro .dijitTabChecked {
     // selected tab
 	border-color: @border-color;			// don't use @selected-border-color because need to match border of TabContainer
-	background-color: @selected-background-color;
+	background-color: @tabpane-background-color;
 	color: @selected-text-color;
 }
 .claro .dijitTabDisabled {
@@ -363,4 +363,11 @@
 .claro .dijitTabContainer .tabStripButton {
     // IE6 can't handle background-image and background-color on same node
 	_background-image: none;
+}
+
+.claro .dijitTabContainer .dijitTabPane {
+	background-color: @tabpane-background-color;
+}
+.claro .dijitTabPane .dijitContainer {
+	background-color: @container-background-color;
 }

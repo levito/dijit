@@ -51,7 +51,7 @@
 .claro .dijitDialogPaneActionBar {
   /* gray bar at bottom of dialog with OK/Cancel buttons */
 
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   padding: 3px 5px 2px 7px;
   text-align: right;
   border-top: 1px solid #dddddd;
@@ -75,7 +75,7 @@
   /* outer container for the titlebar of the dialog */
 
   border: none;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   background-image: none;
   padding: 7px 7px 6px;
 }

@@ -36,7 +36,7 @@
 .claro .dijitProgressBarTile {
   /* inner container for finished portion when in 'tile' (image) mode */
 
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   background-image: url("images/progressBarFull.png");
   background-repeat: repeat-x;
   background-image: none;
@@ -64,5 +64,5 @@
   /* use an animated gif for the progress bar in 'indeterminate' mode;
 		background-color won't appear unless user has turned off background images */
 
-  background: #ffffff url("images/progressBarAnim.gif") repeat-x top;
+  background: #f6f6f6 url("images/progressBarAnim.gif") repeat-x top;
 }

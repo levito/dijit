@@ -33,7 +33,7 @@ There are three areas of styling for the Menu:
   border: 1px solid #d8d8d8;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   background-image: none;
 }
 .claro .dijitMenu {
@@ -72,7 +72,7 @@ There are three areas of styling for the Menu:
 .claro .dijitComboBoxMenu .dijitMenuItemHover,
 .claro .dijitMenuItemSelected {
   border-color: transparent;
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
   background-image: none;
 }
 .claro .dijitMenuItemActive {
@@ -152,10 +152,10 @@ There are three areas of styling for the Menu:
 .claro .dijitComboBoxMenu .dijitMenuItemSelected {
   color: #222222;
   border-color: transparent;
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
 }
 .claro .dijitComboBoxMenuActive .dijitMenuItemSelected {
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
   /* TODO: why is this a different color than normal .dijitMenuItemSelected? */
 
 }

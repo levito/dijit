@@ -90,7 +90,7 @@
 /* hover */
 .claro .dijitTimePicker .dijitUpArrowHover,
 .claro .dijitTimePicker .dijitDownArrowHover {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
 }
 .claro .dijitTimePicker .dijitUpArrowHover .dijitArrowButtonInner {
   background-position: -175px 45%;

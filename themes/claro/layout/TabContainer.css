@@ -79,7 +79,7 @@
 }
 .claro .dijitTab {
   border: 1px solid #d8d8d8;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   -webkit-transition-property: background-color, border;
   -moz-transition-property: background-color, border;
   transition-property: background-color, border;
@@ -90,7 +90,7 @@
 }
 .claro .dijitTabHover {
   border-color: #cccccc;
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   transition-duration: 0.25s;
@@ -106,7 +106,7 @@
 }
 .claro .dijitTabChecked {
   border-color: #d8d8d8;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   color: #222222;
 }
 .claro .dijitTabDisabled {
@@ -236,7 +236,7 @@
 }
 /************ left/right scroll buttons + menu button ************/
 .claro .tabStripButton {
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   border: 1px solid #d8d8d8;
 }
 .claro .dijitTabListContainer-top .tabStripButton {
@@ -250,7 +250,7 @@
   background-image: none;
 }
 .claro .tabStripButtonHover {
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
 }
 .claro .tabStripButtonActive {
   background-color: #dddddd;
@@ -350,4 +350,10 @@
 .claro .dijitTabContainer .dijitTab,
 .claro .dijitTabContainer .tabStripButton {
   _background-image: none;
+}
+.claro .dijitTabContainer .dijitTabPane {
+  background-color: #f6f6f6;
+}
+.claro .dijitTabPane .dijitContainer {
+  background-color: #ffffff;
 }

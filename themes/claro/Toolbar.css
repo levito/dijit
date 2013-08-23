@@ -19,7 +19,7 @@
  */
 .claro .dijitToolbar {
   border-bottom: 1px solid #d8d8d8;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   background-image: none;
   padding: 2px 0 2px 4px;
   zoom: 1;
@@ -70,7 +70,7 @@
 .dj_ie .claro .dijitToolbar .dijitToggleButtonHover .dijitButtonNode {
   /* button should still turn blue on hover, so need to override .dj_ie rules above */
 
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
 }
 /* active status */
 .dj_ie .claro .dijitToolbar .dijitButtonActive .dijitButtonNode,
@@ -102,7 +102,7 @@
 .claro .dijitToolbar .dijitToggleButtonHover .dijitButtonNode,
 .claro .dijitToolbar .dijitComboButtonHover .dijitButtonNode {
   border-width: 1px;
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
   background-image: none;
   padding: 1px;
 }
@@ -112,7 +112,7 @@
 }
 .claro .dijitToolbar .dijitComboButtonHover .dijitButtonNodeHover,
 .claro .dijitToolbar .dijitComboButtonHover .dijitDownArrowButtonHover {
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
 }
 /* active status */
 .claro .dijitToolbar .dijitButtonActive .dijitButtonNode,

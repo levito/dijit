@@ -34,7 +34,7 @@
 /* button */
 .claro .dijitSpinner .dijitArrowButton {
   width: auto;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   background-image: none;
   overflow: hidden;
 }
@@ -93,7 +93,7 @@
 .claro .dijitSpinner .dijitUpArrowButtonHover,
 .claro .dijitSpinner .dijitDownArrowButtonHover,
 .claro .dijitSpinnerFocused .dijitArrowButton {
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
 }
 .claro .dijitSpinner .dijitUpArrowButtonHover .dijitArrowButtonInner {
   background-position: -174px;

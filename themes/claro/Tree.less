@@ -57,6 +57,16 @@
 	.transition-timing-function(ease-out);
 }
 
+.claro .dijitTreeRowHover {
+	background-color: @hovered-tree-background-color;
+	.standard-gradient;
+	padding: 3px 0 1px;
+	// border-color: @hovered-border-color;
+	border-color: transparent;
+	border-width: 1px 0;
+	color: @hovered-text-color;
+	.transition-duration(0);
+}
 .claro .dijitTreeRowSelected {
 	// background-color: @selected-background-color;
 	background: @hovered-background-color;
@@ -66,16 +76,6 @@
 	border-color: transparent;
 	border-width: 1px 0;
 	color: @selected-text-color;
-}
-.claro .dijitTreeRowHover {
-	background-color: @hovered-background-color;
-	.standard-gradient;
-	padding: 3px 0 1px;
-	// border-color: @hovered-border-color;
-	border-color: transparent;
-	border-width: 1px 0;
-	color: @hovered-text-color;
-	.transition-duration(0);
 }
 .claro .dijitTreeRowActive {
 	background-color:@pressed-background-color;

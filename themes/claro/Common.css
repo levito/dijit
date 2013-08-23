@@ -31,7 +31,7 @@
   transition-property: background-color, border-color;
 }
 .claro .dojoDndItemOver {
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
   background-image: none;
   padding: 1px;
   border: solid 1px #cccccc;

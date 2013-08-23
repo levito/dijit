@@ -49,7 +49,7 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   background-image: none;
 }
 .claro .dijitComboButton .dijitArrowButton {
@@ -115,7 +115,7 @@
 .claro .dijitComboButton .dijitButtonNodeHover,
 .claro .dijitComboButton .dijitDownArrowButtonHover,
 .claro .dijitToggleButtonHover .dijitButtonNode {
-  background-color: #e5e5e5;
+  background-color: #e1e1e1;
   border-color: #cccccc;
   color: #222222;
   -webkit-transition-duration: 0.2s;

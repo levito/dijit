@@ -6,9 +6,22 @@
 @disabled-color: #ddd;												// Base for disabled backgrounds and borders
 @error-color: #c66;
 
+// Extended palette
+
+@primary-muted-color: #f6f6f6;
+
+
+// Extended palette vars
+
+@tabpane-background-color: @primary-muted-color;
+@hovered-tree-background-color: @primary-muted-color;
+
+
+// Original claro vars
+
 @container-background-color: #fff;										// Backgrounds for various content areas such as TitlePane, ContentPane and Inputs (if changed, adjust selected tab to match)
 
-@minor-selected-color: #eee; //darken(@primary-color, 7);						// Color for various arrows and buttons
+@minor-selected-color: #e9e9e9; //darken(@primary-color, 7);						// Color for various arrows and buttons
 @base-border-color: #ccc; //darken(@primary-color, 20);		// Augmented and used directly by variables to create border colors for various widgets
 @unfocused-clickable-color: #fff; //lighten(@primary-color, 5);				// Background color for enabled buttons, text inputs
 @border-color: #d8d8d8; //darken(@primary-color, 15);						// Border color for (enabled, unhovered) TextBox, Slider, Accordion, BorderContainer, TabContainer
@@ -24,7 +37,7 @@
 @unselected-text-color: #666; //darken(@secondary-color, 65);										// Text color for unselected/unopened tab button, accordion pane, TitlePane, Menu items
 
 @hovered-border-color: @base-border-color;								// Hover of textbox, tab label, BorderContainer splitter, Calendar, etc.
-@hovered-background-color: #e5e5e5; //darken(@minor-selected-color, 3); //@minor-selected-color;	// Background color for hover of Button, MenuBar, Accordion pane, Calendar... anything that has a (non-white) color to start with and gets darker on hover
+@hovered-background-color: #e1e1e1; //darken(@minor-selected-color, 3); //@minor-selected-color;	// Background color for hover of Button, MenuBar, Accordion pane, Calendar... anything that has a (non-white) color to start with and gets darker on hover
 @hovered-text-color: #222; //@text-color;										// Used for title of select Accordion pane, label of select tab, hovered Menu item, etc.
 
 @pressed-border-color: #bfbfbf; //@base-border-color;								// During click on Calendar day, Slider up/down buttons, tab button, etc.
@@ -34,7 +47,7 @@
 @selected-background-color: @primary-color;								// Selected Accordion pane, nested tab label, Tree row
 @selected-text-color: #222; //@text-color;										// title of selected Accordion pane, label of selected tab, hovered Menu item, etc.
 
-@bar-background-color: @container-background-color; //@secondary-color;								// MenuBar, Toolbar, action bar at bottom of dialog
+@bar-background-color: @primary-muted-color; //@secondary-color;								// MenuBar, Toolbar, action bar at bottom of dialog
 @pane-background-color: @container-background-color;					// Background color of Accordion panes, Dialogs, etc.
 @popup-background-color: @container-background-color;					// Background for Dialog.   TODO: currently use for ColorPalette, maybe should change.
 
@@ -42,7 +55,7 @@
 
 // Buttons
 @button-border-color: @border-color;								// Border for (stand-alone) buttons in normal, hovered, or active state
-@button-background-color: @unselected-background-color; //@minor-selected-color;					// Background color for (unhovered) buttons
+@button-background-color: @minor-selected-color;					// Background color for (unhovered) buttons
 @button-hovered-background-color: @hovered-background-color; //darken(@minor-selected-color, 3);	// Background color for hovered buttons
 @button-pressed-background-color: @pressed-background-color; //darken(@minor-selected-color, 6);				// Background color for active buttons
 @button-border-radius: 2px;												// Rounded corner radius for buttons (except in toolbar)
