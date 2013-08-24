@@ -354,6 +354,6 @@
 .claro .dijitTabContainer .dijitTabPane {
   background-color: #f6f6f6;
 }
-.claro .dijitTabPane .dijitContainer {
+.claro .dijitTabPane > .dijitContainer {
   background-color: #ffffff;
 }
