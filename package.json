@@ -1,6 +1,11 @@
 {
 	"name": "dijit",
 	"version": "1.13.0",
+	"scripts": {
+		"build": "npm run build-claro && npm run minify-claro-mod",
+		"build-claro": "cd ./themes/claro && node compile.js",
+		"minify-claro-mod": "cleancss ./themes/claro/claro-mod.css -o ./themes/claro/claro-mod.min.css"
+	},
 	"directories": {
 		"lib": "."
 	},
@@ -23,6 +28,7 @@
 	},
 	"dojoBuild": "dijit.profile.js",
 	"devDependencies": {
+		"clean-css-cli": "4.1.10",
 		"less": "1.3.3"
 	}
 }
